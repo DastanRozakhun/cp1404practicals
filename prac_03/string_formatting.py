@@ -34,6 +34,7 @@ for i, number in enumerate(numbers, 1):
 
 # TODO: Use f-string formatting to produce the output:
 # 1922 Gibson L-5 CES for about $16,036!
+print(f"{year} {name} for about ${cost:,.0f}!")
 
 # TODO: Using a for loop with the range function and f-string formatting,
 # produce the following right-aligned output (DO NOT use a list):
@@ -48,4 +49,8 @@ for i, number in enumerate(numbers, 1):
 # 2 ^ 8 is  256
 # 2 ^ 9 is  512
 # 2 ^10 is 1024
+
+for exponent in range(0, 11):
+    result = 2 ** exponent
+    print(f"2 ^{exponent:2} is {result:4}")
 
